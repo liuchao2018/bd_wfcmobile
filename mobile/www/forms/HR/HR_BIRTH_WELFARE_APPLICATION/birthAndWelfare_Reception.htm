@@ -1,0 +1,63 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+  <ion-header-bar class="bar-positive" align-title="center">
+    <div ng-include="'templates/form-head.html'"></div>
+    <div class="title">生育福利申请单{{formData.HR_BIRTH_WELFARE_APPLICATION[0].ID.val}}</div>
+  </ion-header-bar>
+  <ion-content delegate-handle="formMainScroll">
+	  <div ng-include="'templates/form-tab.html'"></div>
+    <div id="HR_BIRTH_WELFARE_APPLICATION">
+      <div class="list">
+		  <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				姓名 </span>
+			  <div class="custom-div"
+				   ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].FULL_NAME.val"></div>
+		  </div>
+		  <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				日期 </span>
+			  <div class="custom-div"
+				   ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].APPLY_DATE.val"></div>
+		  </div>
+		  <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				工号 </span>
+			  <div class="custom-div"
+				   ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].JOB_NUMBER.val"></div>
+		  </div>
+		  <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				电话 </span>
+			  <div class="custom-div"
+				   ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].TEL.val"></div>
+		  </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				子女出生日期 </span>
+          <div class="custom-div"
+               ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].BIRTH_DATE_OF_CHILDREN.val"></div>
+        </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				办公室所在地 </span>
+          <div class="custom-div"
+               ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].OFFICE_SITE.val"></div>
+        </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label ">
+				邮寄地址 </span>
+          <div class="custom-div"
+               ng-bind="formData.HR_BIRTH_WELFARE_APPLICATION[0].MAILING_ADDRESS.val"></div>
+        </div>
+        <div class="custom-div attachment">
+          <div ng-repeat="attach in formData.HR_BIRTH_WELFARE_APPLICATION[0].BIRTH_CERTIFICATE.attach" ng-click="fileDownLoad(attach.fieldToken, attach.fileId, attach.fileOldName)">
+            {{attach.fileOldName}}
+          </div>
+        </div>
+
+		      </div>
+    </div>
+
+    <div ng-include="'templates/proc-list.html'"></div>
+  </ion-content>
+</ion-modal-view>
