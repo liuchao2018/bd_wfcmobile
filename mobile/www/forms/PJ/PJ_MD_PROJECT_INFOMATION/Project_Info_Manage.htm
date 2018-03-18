@@ -1,0 +1,26 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+${mForm.funcName}
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="PJ_MD_PROJECT_INFOMATION">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="申请编号">{{i18nForm.PJ_MD_PROJECT_INFOMATION_ID}}</span>
+			<div class="custom-div"
+				ng-bind="formData.PJ_MD_PROJECT_INFOMATION[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="项目编号">{{i18nForm.PJ_MD_PROJECT_INFOMATION_PROJECT_ID}}</span>
+			<div class="custom-div"
+				ng-bind="formData.PJ_MD_PROJECT_INFOMATION[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

@@ -1,0 +1,275 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+放心购保证金退款申请单
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION">
+	<div class="list">
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="编号">{{i18nForm.LABEL_0}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.LABEL_1}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].APPLY_DATE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.LABEL_2}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].INITIATOR.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请部门">{{i18nForm.LABEL_3}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].DEPT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="客户名称">{{i18nForm.LABEL_5}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].CUSTOMER_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="商家名称">{{i18nForm.LABEL_6}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].BUSINESS_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="商家ID">{{i18nForm.LABEL_7}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].BUSINESS_ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请事项">{{i18nForm.LABEL_8}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].APPLY_MATTERS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否产生订单">{{i18nForm.LABEL_9}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_ORDER.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="最后一笔订单是否超过三个月">{{i18nForm.LABEL_10}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_MORE_THAN_THREE_MONTHS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否已清账">{{i18nForm.LABEL_11}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_CLOSEOUT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="保证金是否已清零">{{i18nForm.LABEL_12}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_BAND_CLEAR.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否开具收据">{{i18nForm.LABEL_13}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_OPEN_RECEIPT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款公司/个人名称">{{i18nForm.LABEL_14}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAYMENT_COMPANY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款日期">{{i18nForm.LABEL_15}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAY_DATE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款方式">{{i18nForm.LABEL_16}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAY_WAY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="收款主体">{{i18nForm.LABEL_17}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].RECEIVABLES_SUBJECT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款原因分类">{{i18nForm.LABEL_18}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].REFUND_REASON_CATEGORY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款原因详情">{{i18nForm.LABEL_19}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].REFUND_REASON_DETAILS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行账户名">{{i18nForm.LABEL_22}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].BANK_ACCOUNT_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开户银行">{{i18nForm.LABEL_23}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].OPENING_BANK.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行账号">{{i18nForm.LABEL_24}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].BANK_ACCOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="支付币种">{{i18nForm.LABEL_25}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAYMENT_CURRENCY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款金额">{{i18nForm.LABEL_26}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].REFUND_AMOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="最迟支付日期">{{i18nForm.LABEL_29}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAY_LATEST_DATE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="支付方式">{{i18nForm.LABEL_30}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].PAYMENT_METHOD.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否有投诉">{{i18nForm.LABEL_32}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].HAS_COMPLAIN.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="最后一次投诉处理完毕是否超过6个月">{{i18nForm.LABEL_33}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_MORE_THAN_SIX_MONTHS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="到款总额">{{i18nForm.LABEL_35}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].MONEY_TOTAL_AMOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="有无收据">{{i18nForm.LABEL_36}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].HAS_NO_RECEIPT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="会计科目">{{i18nForm.LABEL_37}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].ACCOUNTING_SUBJECT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="所属公司">{{i18nForm.LABEL_39}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].AFFILIATED_COMPANY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同号">{{i18nForm.LABEL_40}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_INVOICE_RETURNED.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否签约终止协议">{{i18nForm.LABEL_41}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_SIGN_TERM_AGREEMENT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="收据是否退回">{{i18nForm.LABEL_42}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].IS_RECEIPT_RETURNED.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="预算科目">{{i18nForm.LABEL_43}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].BUDGETARY_SUBJECT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="费用科目">{{i18nForm.LABEL_44}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION[0].COST_ITEMS.val"></div>
+    </div>
+  </div>
+</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_PURCHASE_FILEINFO',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_PURCHASE_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.FA_PURCHASE_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.lable_USER_CODE}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ATTACHMENT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.lable_USER_NAME}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">{{i18nForm.lable_DEPT2}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPMANID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">{{i18nForm.lable_DEPT_ID}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UP_DATE.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>

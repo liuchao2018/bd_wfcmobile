@@ -1,0 +1,329 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+SMB客户退款申请
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+  <div id="FA_SMB_CUSTOMER_REFUND_APPLICATION">
+    <div class="list">
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="编号">{{i18nForm.LABEL_25}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.LABEL_26}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].INITIATOR.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请部门">{{i18nForm.LABEL_27}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].DEPT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.LABEL_28}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].APPLY_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="媒介人">{{i18nForm.LABEL_29}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].MEDIA_PERSONS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请事项">{{i18nForm.LABEL_31}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].APPLY_MATTERS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款类型">{{i18nForm.LABEL_32}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ACCOUNT_CASH_BALANCE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="">{{i18nForm.LABEL_2}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BOND.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="有无发票">{{i18nForm.LABEL_34}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].HAS_NO_INVOICE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开户费">{{i18nForm.LABEL_35}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ESTABLISHMENT_FEE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否开户成功">{{i18nForm.LABEL_36}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].OPENING_ACCOUNT_ISSUCESS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="BPM客户编号">{{i18nForm.LABEL_37}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BPM_CUSTOMER_ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广告主名称">{{i18nForm.LABEL_38}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].CUSTOMER_NAME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="AD账号广告主ID">{{i18nForm.LABEL_39}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].AD_ACCOUNT_ADVERTISER_ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款公司/个人名称">{{i18nForm.LABEL_40}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].PAYMENT_COMPANY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款日期">{{i18nForm.LABEL_41}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].PAY_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否充值">{{i18nForm.LABEL_42}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].WHETHER_DELTA.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款方式">{{i18nForm.LABEL_43}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].PAY_WAY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="头条收款主体">{{i18nForm.LABEL_44}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].HEADLINE_RECEIVABLES.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同号">{{i18nForm.LABEL_45}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].CONTRACT_ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款原因">{{i18nForm.LABEL_46}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].REFUND_REASON_CATEGORY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款详情">{{i18nForm.LABEL_47}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].REFUND_DETAILS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行账户名">{{i18nForm.LABEL_49}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BANK_ACCOUNT_NAME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开户银行">{{i18nForm.LABEL_50}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].OPENING_BANK.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行账号">{{i18nForm.LABEL_51}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BANK_ACCOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款金余额">{{i18nForm.LABEL_4}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BALANCE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="退款保证金：">{{i18nForm.LABEL_54}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BOND_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="总计">{{i18nForm.LABEL_56}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].TOTAL_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="最迟支付日期">{{i18nForm.LABEL_57}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].PAY_LATEST_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="已充值金额">{{i18nForm.LABEL_60}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].RECHARGED_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="已消耗金额">{{i18nForm.LABEL_61}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ALREADY_CONSUMED_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="账户余额">{{i18nForm.LABEL_62}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ACCOUNT_BALANCE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="备注">{{i18nForm.LABEL_63}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].REMARKS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广审是否关闭AD账号">{{i18nForm.LABEL_65}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].AD_ACCOUNT_ISCLOSED.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广监是否有投诉处罚">{{i18nForm.LABEL_66}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].IS_COMPLAINT_PUNISHMENT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="到款总额">{{i18nForm.LABEL_68}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].MONEY_TOTAL_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开票总额">{{i18nForm.LABEL_69}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].OIPEN_TICKET_TOTAL_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="有无收据">{{i18nForm.LABEL_70}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].HAS_NO_RECEIPT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="会计科目">{{i18nForm.LABEL_71}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].ACCOUNTING_SUBJECT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="所属公司">{{i18nForm.LABEL_73}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].AFFILIATED_COMPANY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="支付方式">{{i18nForm.LABEL_74}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].PAYMENT_METHOD.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否签约终止协议">{{i18nForm.LABEL_75}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].SIGN_TERMINATION_AGREEMENT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="发票是否退回">{{i18nForm.LABEL_76}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].IS_INVOICE_RETURNED.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="收据是否退回">{{i18nForm.LABEL_77}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].IS_RECEIPT_RETURNED.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="预算科目">{{i18nForm.LABEL_78}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].BUDGETARY_SUBJECT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="费用项目">{{i18nForm.LABEL_79}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_SMB_CUSTOMER_REFUND_APPLICATION[0].COST_ITEMS.val"></div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_SMB_FILEINFO',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_SMB_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.FA_SMB_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.lable_USER_CODE}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ATTACHMENT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.lable_USER_NAME}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">{{i18nForm.lable_DEPT2}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPMANID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">{{i18nForm.lable_DEPT_ID}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UP_DATE.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>

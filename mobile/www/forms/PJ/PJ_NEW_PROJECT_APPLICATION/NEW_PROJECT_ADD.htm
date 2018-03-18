@@ -1,0 +1,249 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+立项申请
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+  <div id="PJ_NEW_PROJECT_APPLICATION">
+    <div class="list">
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请编号">{{i18nForm.lable_ID}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.lable_APPLY_FOR}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].APPLY_FOR.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="部门">{{i18nForm.lable_DEPT}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].DEPT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.lable_APPLY_DATE}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].APPLY_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目编号">{{i18nForm.lable_PROJECT_ID}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].PROJECT_ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="主项目">{{i18nForm.lable_MAIN_PROJECT}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].MAIN_PROJECT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目名称">{{i18nForm.lable_PROJECT_NAME}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].PROJECT_NAME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目负责人">{{i18nForm.lable_PROJECT_LEADER}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].PROJECT_LEADER.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="币种">{{i18nForm.lable_CURRENY}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].CURRENY_NAME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目金额">{{i18nForm.lable_PROJECT_AMOUNT}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].PROJECT_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开始日期">{{i18nForm.lable_START_DATE}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].START_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="截止日期">{{i18nForm.lable_END_DATE}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].END_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="风险类型">{{i18nForm.LABEL_23}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].COLLECT_ITEM.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目描述">{{i18nForm.lable_PROJECT_DESCRIPTION}}</span>
+        <div class="custom-div"
+             ng-bind="formData.PJ_NEW_PROJECT_APPLICATION[0].PROJECT_DESCRIPTION.val"></div>
+      </div>
+    </div>
+  </div>
+
+  <div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-PJ_NEW_PROJECT_COST_DETAIL',$event)">
+        项目费用明细
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-PJ_NEW_PROJECT_COST_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.PJ_NEW_PROJECT_COST_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="预算科目">{{i18nForm.lable_COST_CATEGORY}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.COST_CATEGORY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="年份">{{i18nForm.lable_YEAR}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.YEAR.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="成本中心编码">{{i18nForm.LABEL_21}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.COST_CENTER_CODE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="成本中心">{{i18nForm.LABEL_22}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.COST_CENTER.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="1-2月份">{{i18nForm.lable_JAN_FEB_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.JAN_FEB_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="3-4月份">{{i18nForm.lable_MAR_APR_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.MAR_APR_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="5-6月份">{{i18nForm.lable_MAY_JUN_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.MAY_JUN_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="7-8月份">{{i18nForm.lable_JUL_AUG_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.JUL_AUG_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="9-10月份">{{i18nForm.lable_SEP_OCT_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.SEP_OCT_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="11-12月份">{{i18nForm.lable_NOV_DEC_MONTH}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.NOV_DEC_MONTH.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="金额">{{i18nForm.lable_AMOUNT}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.AMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="描述">{{i18nForm.lable_DESCRIPTION}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.DESCRIPTION.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-PJ_NEW_PROJECT_ATTACHMENT_DETAIL',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-PJ_NEW_PROJECT_ATTACHMENT_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.PJ_NEW_PROJECT_ATTACHMENT_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.lable_UPLOAD_FILE}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPLOAD_FILE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.lable_DESCRIPTION3}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.DESCRIPTION.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-PJ_NEW_PROJECT_EXECUTOR_DETAIL',$event)">
+        项目执行人
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-PJ_NEW_PROJECT_EXECUTOR_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.PJ_NEW_PROJECT_EXECUTOR_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="员工编号">{{i18nForm.lable_USER_CODE}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.USER_CODE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="员工姓名">{{i18nForm.lable_USER_NAME}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.USER_NAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="所属部门">{{i18nForm.lable_DEPT2}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.EXECUTOR_DEPT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="所属部门编号">{{i18nForm.lable_DEPT_ID}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.EXECUTOR_DEPT_ID.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>

@@ -7,6 +7,7 @@ var HR_BIRTH_WELFARE_APPLICATION_RECEPTION = {
       HR_BIRTH_WELFARE_APPLICATION_RECEPTION.initAPPROVALAuto($scope, commonService);
       HR_BIRTH_WELFARE_APPLICATION_RECEPTION.getAttachment($scope, commonService);
         //OA_TRAVEL_APPLICATION_TA_Sure.getAttachment($scope, commonService);
+
     },
     initAPPROVALAuto: function ($scope, commonService) {
 

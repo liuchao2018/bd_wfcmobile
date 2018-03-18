@@ -1,0 +1,32 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+${mForm.funcName}
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="SYS_CATEGORY">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="分类：">{{i18nForm.LABEL_0}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="分类名称：">{{i18nForm.LABEL_1}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="显示名称：">{{i18nForm.LABEL_2}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

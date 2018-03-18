@@ -1,6 +1,9 @@
 var _server = "http://127.0.0.1:8080/toutiao/rest/interface";
 var mServer = "http://127.0.0.1:8080/demo/rest";
 var _mServer = "http://59.151.19.8:443";//给更新文件用的
+//var _server = "http://127.0.0.1:8080:8080/toutiao/rest/interface";
+//var mServer = "http://127.0.0.1:8080/demo/rest";
+//var _mServer = "http://59.151.19.8:443";//给更新文件用的
 
 var updateUrl_ios = "http://www.pgyer.com/apiv1/app/install?aKey={aKey}&_api_key=4c2382ab2585a1239d317fa9f7400474&password=21vianet";
 

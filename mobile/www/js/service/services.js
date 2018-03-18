@@ -36,7 +36,9 @@ _angular.factory("loginService", function ($state, $http, myPopover, myLoading,$
       $http.post(UrlConfig.login, loginInfo).success(function (data) {
         if (data) {
           if (data.loginResut == "0") {
-            myPopover.showPopoverMsg("", "用户名或密码不正确");
+            //从国际化对象中获取提示信息
+            var message = $rootScope.i18nLocal.alert.error_u_p;
+            myPopover.showPopoverMsg("", message);
           } else if (data.loginResut == "1") {
             sessionService.init();
             window.localStorage.loginId = loginInfo.loginId;
@@ -1879,7 +1881,7 @@ _angular.factory("loginService", function ($state, $http, myPopover, myLoading,$
         var currentPageIndex = $scope.pageInfo.currentPageIndex;
         var _param = {
           "bizObj": "AU_ORGMEMBER",
-          "service": "selectCnt",
+          "service": "selectCount",
           "fields": "*",
           "filter": filter,
           "currentPageIndex": currentPageIndex,

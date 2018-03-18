@@ -16,6 +16,8 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
         $scope.user.password = util.getPassword();
         $scope.version = "V 1.0.63";
         //}
+        //加载国际化的文件
+        $rootScope.i18nLocal = I18nUtil.getLocalI18n();
         document.addEventListener("deviceready", function() {
             $cordovaAppVersion.getVersionNumber().then(function(version) {
                 $scope.version = version;
@@ -140,7 +142,7 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
                 }
             });
         }
-        updateService.checkVersion();
+        //updateService.checkVersion();
         $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
             //alert(toState.url);
             //console.log(fromState);
@@ -148,7 +150,7 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
                 var isSetLockPwd = window.localStorage.isSetLockPwd;
                 if (isSetLockPwd == "set") {
                     $scope.unlock.pwd = "";
-                    loginService.showLockPwd($scope);
+                    //loginService.showLockPwd($scope);
                     return;
                 }
                 if (fromState.views == null) { //说明是刚打开app
@@ -337,6 +339,9 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
             }
             $scope.formTabWidth = formTabWidth;
             myLoading.showLoading();
+            var i18nUrl = "bizobjects/" + bizObjId + "/" + formId + "_html.json";
+            //加载表单国际化文件
+            $rootScope.i18nForm = I18nUtil.getFormI18n(i18nUrl);
             formService.getFormData($scope.param, $scope);
             //给弹出的表单页面注册左右滑动事件
             var mContent = angular.element("ion-modal-view ion-content");
@@ -757,9 +762,8 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
         $scope.lock = {};
         $scope.lock.lockPwd = "";
         $scope.nextGName = "继续";
-        //alert(isSetLockPwd);
-
-        //alert(2);
+        //重新加载国际化的资源配置
+        $rootScope.i18nLocal = I18nUtil.getLocalI18n();
         $scope.setLockPwd = function() {
             //alert(1);
             $scope.lockInfo = "请输入4位数字密码";
@@ -780,7 +784,7 @@ angular.module('mobileApp.controllers', ['mobiscroll-select', 'angular-intro'])
             $scope.isSetLockPwd = true;
         } else {
             $scope.isSetLockPwd = false;
-            $scope.setLockPwd();
+            //$scope.setLockPwd();
         }
         $scope.removeLock = function() {
             window.localStorage.isSetLockPwd = "notSet";

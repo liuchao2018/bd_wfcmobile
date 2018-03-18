@@ -1,0 +1,20 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+日期选择
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="SYS_DATA_TRANSFER_HISTAB">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="迁移日期">{{i18nForm.LABEL_0}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_DATA_TRANSFER_HISTAB[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

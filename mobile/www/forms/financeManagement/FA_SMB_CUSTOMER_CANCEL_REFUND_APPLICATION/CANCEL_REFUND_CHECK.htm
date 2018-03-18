@@ -1,0 +1,155 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+SMB客户撤销退款申请
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="编号">{{i18nForm.lable_ID}}</span>
+			<div class="custom-div"
+				ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ID.val"></div>
+		</div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.lable_INITIATOR}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].INITIATOR.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请部门">{{i18nForm.lable_DEPT}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].DEPT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.lable_APPLY_DATE}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].APPLY_DATE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="媒介人">{{i18nForm.lable_MEDIA_PERSONS}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].MEDIA_PERSONS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="原SMB退款编号">{{i18nForm.lable_ORIGINAL_ID}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ORIGINAL_ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广告主名称">{{i18nForm.lable_ADVERTISER_NAME}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ADVERTISER_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广告主ID">{{i18nForm.lable_ADVERTISER_ID}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ADVERTISER_ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="BPM编号">{{i18nForm.lable_BPM_CUSTOMER_ID}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].BPM_CUSTOMER_ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="原退款金额">{{i18nForm.lable_ORIGINAL_REFUND_AMOUNT}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ORIGINAL_REFUND_AMOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="撤销退款原因">{{i18nForm.lable_CANCEL_REFUND_REASON}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].CANCEL_REFUND_REASON.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="原OA是否终止">{{i18nForm.lable_ORIG_SMB_REFUND_ISEND}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].ORIG_SMB_REFUND_ISEND.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="款项是否退出">{{i18nForm.lable_FUND_IS_QUIT}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].FUND_IS_QUIT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否重新开户">{{i18nForm.lable_IS_OPEN_ACCOUNT_AGAIN}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].IS_OPEN_ACCOUNT_AGAIN.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="账户是否清零">{{i18nForm.lable_IS_ACCOUNT_CLEAR}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].IS_ACCOUNT_CLEAR.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="确认回充金额">{{i18nForm.lable_CONFIRM_RECHARGE_AMOUNT}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].CONFIRM_RECHARGE_AMOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="是否已回充账户">{{i18nForm.lable_IS_RECHARGE_ACCOUNT}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION[0].IS_RECHARGE_ACCOUNT.val"></div>
+    </div>
+			</div>
+        </div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_SMB_CUSTOMER_CANCEL_FILEINFO',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_SMB_CUSTOMER_CANCEL_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.FA_SMB_CUSTOMER_CANCEL_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.LABEL_17}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ATTACHMENT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.LABEL_19}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">{{i18nForm.LABEL_20}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPMANID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">{{i18nForm.LABEL_21}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UP_DATE.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>

@@ -1,0 +1,56 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+接口日志
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="SYS_INT_LOG">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="接口编号">{{i18nForm.SYS_INT_LOG_SIL_INT_ID}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="调用时间">{{i18nForm.SYS_INT_LOG_SIL_TIME}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="调用人">{{i18nForm.SYS_INT_LOG_SIL_MAN}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="发送参数">{{i18nForm.SYS_INT_LOG_SIL_SEND_PARAM}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="接收参数">{{i18nForm.SYS_INT_LOG_SIL_REC_PARAMS}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="状态（0:成功;1:失败）">{{i18nForm.SYS_INT_LOG_SI_STATE}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="编号">{{i18nForm.SYS_INT_LOG_SIL_ID}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_INT_LOG[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

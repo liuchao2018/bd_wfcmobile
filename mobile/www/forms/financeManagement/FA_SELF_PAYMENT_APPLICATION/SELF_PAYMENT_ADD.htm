@@ -1,0 +1,190 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+自主电商赔付申请表
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="FA_SELF_PAYMENT_APPLICATION">
+  <div class="list">
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.LABEL_43}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].APPLY_DATE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="编号">{{i18nForm.LABEL_19}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ID.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.LABEL_20}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].INITIATOR.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请部门">{{i18nForm.LABEL_21}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].DEPT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="赔付用户姓名">{{i18nForm.LABEL_22}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].USER_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="赔付用户电话">{{i18nForm.LABEL_23}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].TEL.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="赔付用户地址">{{i18nForm.LABEL_24}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ADDRESS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="订单编号">{{i18nForm.LABEL_25}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ORDER_NO.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="订单金额">{{i18nForm.LABEL_26}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ORDER_AMOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="投诉类型">{{i18nForm.LABEL_27}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].COMPLAINT_TYPE.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请事项">{{i18nForm.LABEL_28}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].APPLICATION_MATTERS.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广告主名称">{{i18nForm.LABEL_29}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ADVERTISER.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="广告主ID">{{i18nForm.LABEL_30}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].ADVERTISER_NO.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="一级代理商名称">{{i18nForm.LABEL_31}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].FIRST_LEVEL_AGENT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="一级代理商ID">{{i18nForm.LABEL_32}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].FIRST_LEVEL_AGENT_NO.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="代理商合同编号">{{i18nForm.LABEL_33}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].CONTRACT_NO.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="BPM客户编号">{{i18nForm.LABEL_34}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].BPM_CUSTOMER_NUMBER.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="所属公司">{{i18nForm.LABEL_35}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].COMPANY.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="其他信息补充">{{i18nForm.LABEL_36}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].OTHER_INFO.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开户名">{{i18nForm.LABEL_37}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].OPENING_NAME.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="开户银行（精确到支行）">{{i18nForm.LABEL_38}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].OPENING_BANK.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行账户">{{i18nForm.LABEL_39}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].BANK_ACCOUNT.val"></div>
+    </div>
+    <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="赔付金额">{{i18nForm.LABEL_40}}</span>
+      <div class="custom-div"
+           ng-bind="formData.FA_SELF_PAYMENT_APPLICATION[0].PAYMNET_AMOUNT.val"></div>
+    </div>
+  </div>
+</div>
+
+<div ng-include="'templates/proc-list.html'"></div>
+<div class="detail-list">
+  <div class="detail-list-bg">
+
+    <div class="detail-title" ng-click="showOrHideDetail('detail-FA_SELF_PAYMENT_FILEINFO',$event)">
+      附件
+      <i class="ion-plus detail-title-ion"></i>
+    </div>
+    <div style="display: none" class="detail-info" id="detail-FA_SELF_PAYMENT_FILEINFO">
+      <div class="list"  ng-repeat="detail in formData.FA_SELF_PAYMENT_FILEINFO">
+        <div class="item item-input custom-item-input">
+          <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.LABEL_50}}</span>
+          <div class="custom-div"
+               ng-bind="detail.ATTACHMENT.val"></div>
+        </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.LABEL_51}}</span>
+          <div class="custom-div"
+               ng-bind="detail.REMARK.val"></div>
+        </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">{{i18nForm.LABEL_52}}</span>
+          <div class="custom-div"
+               ng-bind="detail.UPMANID.val"></div>
+        </div>
+        <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">{{i18nForm.LABEL_53}}</span>
+          <div class="custom-div"
+               ng-bind="detail.UP_DATE.val"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

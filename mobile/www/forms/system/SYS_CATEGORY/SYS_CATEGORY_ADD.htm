@@ -1,0 +1,68 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+数据词典
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="SYS_CATEGORY">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="数据项:">{{i18nForm.LABEL_0}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="数据项名称:">{{i18nForm.LABEL_1}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="数据项值:">{{i18nForm.LABEL_2}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="显示名称:">{{i18nForm.LABEL_3}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="排序:">{{i18nForm.LABEL_4}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="标签:">{{i18nForm.LABEL_5}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="父ID">{{i18nForm.LABEL_7}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="国际化版本">{{i18nForm.LABEL_8}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="备注:">{{i18nForm.LABEL_6}}</span>
+			<div class="custom-div"
+				ng-bind="formData.SYS_CATEGORY[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

@@ -1,0 +1,438 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+合同盖章
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+  <div id="C_CONTRACT_APPLICATION">
+    <div class="list">
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同名称">{{i18nForm.LABEL_10}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_NAME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同编号">{{i18nForm.LABEL_12}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_NUMBER.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="预算科目">{{i18nForm.LABEL_13}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].PAYMENT_TYPE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同类型">{{i18nForm.LABEL_11}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_TYPE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同性质">{{i18nForm.LABEL_15}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SETTLEMENT_MODEL.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="币种">{{i18nForm.LABEL_16}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CURRENCY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="总金额">{{i18nForm.LABEL_17}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].TOTAL_AMOUNT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目信息">{{i18nForm.LABEL_18}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].PROJECT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="有效日期从">{{i18nForm.LABEL_19}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].EFFECTIVE_DATE_FROM.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="有效日期至">{{i18nForm.LABEL_20}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].VALID_DATE_TO.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="经办人">{{i18nForm.LABEL_31}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].AGENT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="国家/地区">{{i18nForm.LABEL_32}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].COUNTRY_ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="产品线">{{i18nForm.LABEL_33}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].PRODUCT_LINE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="备注">{{i18nForm.LABEL_21}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].REMARKS.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="创建方式">{{i18nForm.LABEL_22}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CREATION_METHOD.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="收支类型">{{i18nForm.LABEL_23}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].EXPENDITURE_TYPE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同性质">{{i18nForm.LABEL_24}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_PROPERTY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同创建日期">{{i18nForm.LABEL_25}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_CREATION_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同结束日期">{{i18nForm.LABEL_26}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].CONTRACT_END_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="签订日期">{{i18nForm.LABEL_27}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SIGNING_TIME.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合作模式">{{i18nForm.LABEL_34}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SETTLEMENT_MODEL.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="来源系统">{{i18nForm.LABEL_28}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SOURCE_SYSTEM.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="来源单据编号">{{i18nForm.LABEL_29}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SOURCE_BILL_NUMBER.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="先行盖章">{{i18nForm.LABEL_30}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].IS_WE_FIRST_STAMP.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="打印份数">{{i18nForm.LABEL_31}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].PRINT_COPIES.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="印章类型">{{i18nForm.LABEL_28}}</span>
+        <div class="custom-div"
+             ng-bind="formData.C_CONTRACT_APPLICATION[0].SEAL_TYPE.val"></div>
+      </div>
+    </div>
+  </div>
+  <div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-C_CONTRACT_TRANSACTION_PARTY_DETAIL',$event)">
+        交易方信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-C_CONTRACT_TRANSACTION_PARTY_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.C_CONTRACT_TRANSACTION_PARTY_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="序号">{{i18nForm.LABEL_0}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="交易方">{{i18nForm.LABEL_1}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.TRADING_PARTY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="客户/供应商">{{i18nForm.LABEL_2}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.CUSTOMER_OR_SUPPLIER.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="法定代表人">{{i18nForm.LABEL_3}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.LEGAL_REPRESENTATIVE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="联系人">{{i18nForm.LABEL_4}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.CONTACTS.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="联系人电话">{{i18nForm.LABEL_5}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.CONTACT_PHONE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="角色">{{i18nForm.LABEL_6}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ROLE_NAME.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-C_CONTRACT_ITEM',$event)">
+        商品行信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-C_CONTRACT_ITEM">
+        <div class="list"  ng-repeat="detail in formData.C_CONTRACT_ITEM">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="序号">{{i18nForm.LABEL_29}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="商品信息">{{i18nForm.LABEL_10}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_INFO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="商品详情">{{i18nForm.LABEL_11}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_DETAIL.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="数量">{{i18nForm.LABEL_12}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.COUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="单价">{{i18nForm.LABEL_13}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UNIT_PRICE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="总计">{{i18nForm.LABEL_14}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.AMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="税率">{{i18nForm.LABEL_15}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.BE_PAID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="到货地点">{{i18nForm.LABEL_16}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ADDRESS.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="项目名称">{{i18nForm.LABEL_17}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.PROJECT.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_SMB_FILEINFO',$event)">
+        结算信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_SMB_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.FA_SMB_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="序号">{{i18nForm.LABEL_30}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="结算类型">{{i18nForm.LABEL_18}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.BALANCE_TYPE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="详细结算类型">{{i18nForm.LABEL_23}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.BALANCE_TYPE_DETAIL.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="结算条件">{{i18nForm.LABEL_24}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.BALANCE_CONDITION.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="天数">{{i18nForm.LABEL_25}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.DAYS.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="天数单位">{{i18nForm.LABEL_26}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.DAYS_UNIT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="结算方式">{{i18nForm.LABEL_27}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.BALANCE_MODE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="金额/比例">{{i18nForm.LABEL_28}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.MONEY_RATIO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="已申请金额">{{i18nForm.LABEL_21}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.APPLY_MONEY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="实际付款金额">{{i18nForm.LABEL_22}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.PAYMENT_MONEY.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-C_CONTRACT_ATTACHMENT_DETAIL',$event)">
+        文件信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-C_CONTRACT_ATTACHMENT_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.C_CONTRACT_ATTACHMENT_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="文件名称">{{i18nForm.LABEL_7}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.FILE_NAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="扫描件名称">{{i18nForm.LABEL_8}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.SCANNING_COPY_NAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="状态">{{i18nForm.LABEL_9}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.STATUS.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-C_CONTRACT_FILEINFO',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-C_CONTRACT_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.C_CONTRACT_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">{{i18nForm.lable_USER_CODE}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.ATTACHMENT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">{{i18nForm.lable_USER_NAME}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">{{i18nForm.lable_DEPT2}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPMANID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">{{i18nForm.lable_DEPT_ID}}</span>
+            <div class="custom-div"
+                 ng-bind="detail.UP_DATE.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>

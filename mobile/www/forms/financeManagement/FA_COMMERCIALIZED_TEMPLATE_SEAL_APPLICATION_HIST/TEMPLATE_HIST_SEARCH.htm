@@ -1,0 +1,50 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+${mForm.funcName}
+	<div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+<div id="">
+	<div class="list">
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="开始日期">{{i18nForm.LABEL_0}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="结束日期">{{i18nForm.LABEL_1}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="发起人">{{i18nForm.LABEL_2}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="部门">{{i18nForm.LABEL_3}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="项目名称">{{i18nForm.LABEL_4}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+				<div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+				labeName="公司主体">{{i18nForm.LABEL_5}}</span>
+			<div class="custom-div"
+				ng-bind="formData.[0].FULL_NAME.val"></div>
+		</div>
+			</div>
+
+	<div ng-include="'templates/proc-list.html'"></div>
+</ion-content> </ion-modal-view>

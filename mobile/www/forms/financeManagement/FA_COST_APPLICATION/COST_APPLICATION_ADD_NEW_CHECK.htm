@@ -1,0 +1,316 @@
+<ion-modal-view align="center" ng-controller="formCtrl">
+<ion-header-bar class="bar-positive" align-title="center">
+<div ng-include="'templates/form-head.html'"></div>
+<div class="title">
+对公支出单
+	</div>
+</ion-header-bar> <ion-content delegate-handle="formMainScroll">
+<div ng-include="'templates/form-tab.html'"></div>
+  <div id="FA_COST_APPLICATION">
+    <div class="list">
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="编号">{{i18nForm.lable_ID}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].ID.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请人">{{i18nForm.lable_CATEGORY}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].INITIATOR.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="部门">{{i18nForm.lable_INITIATOR}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].DEPT.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="申请日期">{{i18nForm.lable_DEPT}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].APPLY_DATE.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="单据类型">{{i18nForm.billtype}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].CATEGORY.val"></div>
+      </div>
+      <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="来源系统">{{i18nForm.LABEL_9}}</span>
+        <div class="custom-div"
+             ng-bind="formData.FA_COST_APPLICATION[0].SOURCE_SYSTEM.val"></div>
+      </div>
+    </div>
+  </div>
+  <div ng-include="'templates/proc-list.html'"></div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_COST_ITEM_DETAIL',$event)">
+        支付行信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_COST_ITEM_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.FA_COST_ITEM_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="合同号">合同号</span>
+            <div class="custom-div"
+                 ng-bind="detail.CONTRACT_ID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="我方主体">我方主体</span>
+            <div class="custom-div"
+                 ng-bind="detail.COMPANY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="合同类型">合同类型</span>
+            <div class="custom-div"
+                 ng-bind="detail.CONTRACT_TYPE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="主体分支行信息">主体分支行信息</span>
+            <div class="custom-div"
+                 ng-bind="detail.COMPANY_BANKNAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="主体银行账号">主体银行账号</span>
+            <div class="custom-div"
+                 ng-bind="detail.COMPANY_BANKACCOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="结算类型">结算类型</span>
+            <div class="custom-div"
+                 ng-bind="detail.SETTLEMENT_TYPE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="结算金额">结算金额</span>
+            <div class="custom-div"
+                 ng-bind="detail.SETTLEMENT_AMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="费用项目">费用项目</span>
+            <div class="custom-div"
+                 ng-bind="detail.COST_ITEMS.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="付款金额">付款金额</span>
+            <div class="custom-div"
+                 ng-bind="detail.PAY_AMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="税额">税额</span>
+            <div class="custom-div"
+                 ng-bind="detail.TAX_AMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="发票类型">发票类型</span>
+            <div class="custom-div"
+                 ng-bind="detail.INVOICE_TYPE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="最迟付款日期">最迟付款日期</span>
+            <div class="custom-div"
+                 ng-bind="detail.LATEST_PAYMENT_DAY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="支付行信息">支付行信息</span>
+            <div class="custom-div"
+                 ng-bind="detail.PAYMENT_LINE_INFO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="供应商">供应商</span>
+            <div class="custom-div"
+                 ng-bind="detail.CUSTOMER_NAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="账号类别">账号类别</span>
+            <div class="custom-div"
+                 ng-bind="detail.ACCOUNT_CATEGORY.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="银行">银行</span>
+            <div class="custom-div"
+                 ng-bind="detail.BANK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="账号">账号</span>
+            <div class="custom-div"
+                 ng-bind="detail.ACCOUNT_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="备注">备注</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_PAYMENT_COSTCENTER_DETAIL',$event)">
+        预算科目
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_PAYMENT_COSTCENTER_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.FA_PAYMENT_COSTCENTER_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="序号">序号</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="预算科目">预算科目</span>
+            <div class="custom-div"
+                 ng-bind="detail.BUDGET_ITEM_CODE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="成本中心">成本中心</span>
+            <div class="custom-div"
+                 ng-bind="detail.COST_CENTER.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="金额">金额</span>
+            <div class="custom-div"
+                 ng-bind="detail.AMOUNT.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_COST_INVENTORY_DETAIL',$event)">
+        商品信息
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_COST_INVENTORY_DETAIL">
+        <div class="list"  ng-repeat="detail in formData.FA_COST_INVENTORY_DETAIL">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="序号">序号</span>
+            <div class="custom-div"
+                 ng-bind="detail.ITEM_NO.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="商品信息">商品信息</span>
+            <div class="custom-div"
+                 ng-bind="detail.CATEGORYNAME.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="预算科目">预算科目</span>
+            <div class="custom-div"
+                 ng-bind="detail.BUDGET_SUBJECT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="本次结算数量">本次结算数量</span>
+            <div class="custom-div"
+                 ng-bind="detail.POLINENUM.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="订单单价(含税)">订单单价(含税)</span>
+            <div class="custom-div"
+                 ng-bind="detail.POLINEUNITPRICE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="本次结算金额">本次结算金额</span>
+            <div class="custom-div"
+                 ng-bind="detail.MATCHINGAMOUNT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="收货/服务日期">收货/服务日期</span>
+            <div class="custom-div"
+                 ng-bind="detail.RCVLASTRECEIPTDATE.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="接收单编号">接收单编号</span>
+            <div class="custom-div"
+                 ng-bind="detail.RCVHEADERNUM.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="支付类型">支付类型</span>
+            <div class="custom-div"
+                 ng-bind="detail.PAYTYPECODENAME.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="detail-list">
+    <div class="detail-list-bg">
+
+      <div class="detail-title" ng-click="showOrHideDetail('detail-FA_PUBLIC_EXPENDITURE_FILEINFO',$event)">
+        附件
+        <i class="ion-plus detail-title-ion"></i>
+      </div>
+      <div style="display: none" class="detail-info" id="detail-FA_PUBLIC_EXPENDITURE_FILEINFO">
+        <div class="list"  ng-repeat="detail in formData.FA_PUBLIC_EXPENDITURE_FILEINFO">
+          <div class="item item-input custom-item-input">
+            <span class="list-index">{{$index+1}}</span>
+			<span class="input-label custom-input-label "
+            labeName="附件">附件</span>
+            <div class="custom-div"
+                 ng-bind="detail.ATTACHMENT.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="说明">说明</span>
+            <div class="custom-div"
+                 ng-bind="detail.REMARK.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传人">上传人</span>
+            <div class="custom-div"
+                 ng-bind="detail.UPMANID.val"></div>
+          </div>
+          <div class="item item-input custom-item-input">
+			<span class="input-label custom-input-label "
+            labeName="上传日期">上传日期</span>
+            <div class="custom-div"
+                 ng-bind="detail.UP_DATE.val"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content> </ion-modal-view>
