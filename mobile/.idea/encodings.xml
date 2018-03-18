@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/www/forms/Contract/C_CONTRACT_APPLICATION/C_CONTRACT_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/Contract/C_CONTRACT_APPLICATION/C_CONTRACT_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/PJ/PJ_NEW_PROJECT_APPLICATION/PJ_NEW_PROJECT_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/PJ/PJ_NEW_PROJECT_APPLICATION/PJ_NEW_PROJECT_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_COST_APPLICATION/FA_COST_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_COST_APPLICATION/FA_COST_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_INVESTMENT_PROJECT_APPLICATION/FA_INVESTMENT_PROJECT_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_INVESTMENT_PROJECT_APPLICATION/FA_INVESTMENT_PROJECT_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_NON_COMMERCIAL_INVOICE_APPLICATION/FA_NON_COMMERCIAL_INVOICE_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_NON_COMMERCIAL_INVOICE_APPLICATION/FA_NON_COMMERCIAL_INVOICE_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION/FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION/FA_PURCHASE_AT_EASE_BAND_REFUND_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_PURCHASE_USER_INDEMNITY_APPLICATION/FA_PURCHASE_USER_INDEMNITY_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_PURCHASE_USER_INDEMNITY_APPLICATION/FA_PURCHASE_USER_INDEMNITY_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SEAL_CERT_LENT_APPLICATION/FA_SEAL_CERT_LENT_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SEAL_CERT_LENT_APPLICATION/FA_SEAL_CERT_LENT_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SEAL_CERT_USE_APPLICATION/FA_SEAL_CERT_USE_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SEAL_CERT_USE_APPLICATION/FA_SEAL_CERT_USE_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SELF_PAYMENT_APPLICATION/FA_SELF_PAYMENT_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SELF_PAYMENT_APPLICATION/FA_SELF_PAYMENT_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION/FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION/FA_SMB_CUSTOMER_CANCEL_REFUND_APPLICATION_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SMB_CUSTOMER_REFUND_APPLICATION/FA_SMB_CUSTOMER_REFUND_APPLICATION.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/www/forms/financeManagement/FA_SMB_CUSTOMER_REFUND_APPLICATION/FA_SMB_CUSTOMER_REFUND_APPLICATION_config.js" charset="UTF-8" />
+  </component>
+</project>
